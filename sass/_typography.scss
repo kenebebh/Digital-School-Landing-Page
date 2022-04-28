@@ -1,0 +1,52 @@
+%heading {
+  font-family: $main-font;
+  font-weight: 400;
+  color: #023232;
+}
+
+.heading-primary {
+  @extend %heading;
+  font-weight: 700;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  width: 90%;
+  line-height: 1.3;
+
+  @media only screen and (max-width: $bp-tiny) {
+    font-size: 3.5rem;
+  }
+}
+
+.heading-secondary {
+  @extend %heading;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.heading-tertiary {
+  @extend %heading;
+  font-size: 1.6rem;
+  margin: 1.5rem 0;
+  font-weight: bold;
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.heading-5 {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0 0.3rem;
+}
+
+.paragraph {
+  color: $color-text;
+}

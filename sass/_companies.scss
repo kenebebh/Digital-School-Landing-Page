@@ -1,0 +1,52 @@
+.companies {
+  text-align: center;
+  margin: 5rem 15rem 10rem;
+
+  @media only screen and (max-width: $bp-large) {
+    margin: 5rem 7rem;
+  }
+}
+
+.company {
+  height: 3rem;
+}
+
+.airtable {
+  width: 8rem;
+  height: 4rem;
+}
+
+.amazon {
+  width: 10rem;
+}
+
+.facebook {
+  height: 2.5rem;
+}
+
+.trusted-companies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 15rem));
+  grid-auto-rows: 100px;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: $shadow-small;
+  margin: 5rem 0 5rem;
+  border-radius: 10px;
+
+  @media only screen and (max-width: $bp-tiny) {
+    margin: 0;
+  }
+}
+
+.line-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 3rem 0;
+}
+
+.lines {
+  width: 10rem;
+}

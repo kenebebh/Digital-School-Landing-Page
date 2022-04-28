@@ -1,0 +1,48 @@
+.testimonies {
+  text-align: center;
+  margin: 0 0 10rem;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.details {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.person {
+  width: 7rem;
+}
+
+.testimony {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  margin: 0 2rem 4rem;
+  text-align: left;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 2rem;
+  padding-bottom: 4rem;
+  border: 1px solid transparent;
+  transition: all 0.1s;
+
+  &:hover {
+    box-shadow: $shadow-small;
+    border: 1px solid $color-primary;
+    transform: scale(1.03);
+    border-radius: 5px;
+  }
+}
+
+.test__paragraph {
+  margin: 2rem 0;
+}

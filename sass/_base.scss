@@ -1,0 +1,57 @@
+$color-primary: #23bebe;
+$color-primary-light: #a6f5f549;
+$color-variant: #01adac;
+$color-text: #495555d8;
+$color-heading: #070a44;
+$color-dark-blue: #103d76;
+
+$shadow-big: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+$shadow-small: 1.5rem 0 2rem rgba(0, 0, 0, 0.06);
+
+$main-font: "Ubuntu";
+
+$bp-largest: 81.25em; //1300px
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 50em; //800px
+$bp-smallest: 37.5em; //600px
+$bp-tiny: 25rem; //400px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px 10px/16px = 62.5%
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 45%;
+  }
+}
+
+body {
+  font-size: 1.4rem;
+  background-color: #3978c8;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  margin: 0 20rem;
+  background-color: white;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0;
+  }
+}
